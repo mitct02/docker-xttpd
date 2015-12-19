@@ -9,6 +9,6 @@ ADD ./tcdfiles/* /usr/share/xtide/
 ADD loop.sh /bin/
 RUN chmod +x /bin/loop.sh
 
-#RUN /usr/sbin/xttpd 8080
+ENV PORT 8080
 
-CMD ["nohup", "sh", "/bin/loop.sh", "&"]
+CMD ["nohup", "sh", "-c", "/bin/loop.sh $PORT", "&"]
