@@ -1,5 +1,4 @@
 FROM  mitct02/xtide:2.13.2
-
 MAINTAINER Tom Mitchell <tom@tom.org>
 
 # copy all the tcd files from ./tcdfiles into /usr/share/xtide/
